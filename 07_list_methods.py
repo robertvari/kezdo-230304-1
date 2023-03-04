@@ -19,3 +19,7 @@ print(my_friends)
 name_index = my_friends.index("Kiss Tamás")
 del my_friends[name_index]
 print(my_friends)
+
+# add two lists together
+my_enemy_list = ["Sauron", "Darth Vader", "Voldemort"]
+print(my_friends + my_enemy_list)
