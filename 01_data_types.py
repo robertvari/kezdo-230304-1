@@ -14,3 +14,6 @@ True, False  # booleans
 # arrays
 # list
 my_friends = ["Robert", "Csilla", "Tamás", "Andi", "Balázs", "Karcsi"]
+
+# sets
+names = {"csilla", "tamás", "kriszta", "csaba", "andi"}
