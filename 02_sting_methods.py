@@ -1,0 +1,5 @@
+print(   "hello world".upper()   )
+print(   "HELLO WORLD".lower()   )
+print(   "hEllo wOrld".title()   )
+print(   "hello world".replace("l", "X")   )
+print(   "hello world".replace("world", "Robert")   )
