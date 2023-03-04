@@ -10,3 +10,7 @@ True, False  # booleans
 
 # float
 3.14
+
+# arrays
+# list
+my_friends = ["Robert", "Csilla", "Tamás", "Andi", "Balázs", "Karcsi"]
