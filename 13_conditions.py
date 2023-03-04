@@ -1,6 +1,7 @@
-my_age = 17
+my_age = input("Your age?")
 
-if my_age >= 18:
+# cast a string to an int
+if int(my_age) >= 18:
     print("You can drink alcohol.")
 else:
     print("You can't drink alcohol!!!")
