@@ -12,5 +12,14 @@ assert os.path.isdir(photo_folder_path), "Az útvonal könyvtár kell legyen!"
 
 
 file_list = os.listdir(photo_folder_path)
+alowed_extensions = [".jpg", ".jpeg"]
+
 for file in file_list:
-    print(file)
+    image_full_path = os.path.join(photo_folder_path, file)
+    path, ext = os.path.splitext(image_full_path)
+
+    if not ext.lower() in alowed_extensions:
+        continue
+    
+    img = Image.open(image_full_path)
+    print(file, img.size)
