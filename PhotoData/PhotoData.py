@@ -14,6 +14,7 @@ assert os.path.isdir(photo_folder_path), "Az útvonal könyvtár kell legyen!"
 file_list = os.listdir(photo_folder_path)
 alowed_extensions = [".jpg", ".jpeg"]
 
+photo_data_container = []
 for file in file_list:
     image_full_path = os.path.join(photo_folder_path, file)
     path, ext = os.path.splitext(image_full_path)
@@ -22,4 +23,6 @@ for file in file_list:
         continue
     
     img = Image.open(image_full_path)
-    print(file, img.size)
+    photo_data_container.append(f"File Name: {file} Dimensions: {img.size}")
+
+pass
