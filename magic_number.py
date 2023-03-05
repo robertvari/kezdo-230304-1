@@ -40,6 +40,7 @@ while True:
         print(f"My number was {magic_number}.")
         print("Game over :((")
     
+    # Ask player if he/she wants to play again
     player_choice = input("Do you want to play again? (y/n)")
     if player_choice == "n":
         exit()
