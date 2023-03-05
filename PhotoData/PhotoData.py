@@ -25,4 +25,11 @@ for file in file_list:
     img = Image.open(image_full_path)
     photo_data_container.append(f"File Name: {file} Dimensions: {img.size}")
 
-pass
+
+# save photo_data_container into a txt file
+with open("photo_data.txt", "w") as my_file:
+    my_file.write(str(photo_data_container))
+
+# read photo_data.txt
+with open("photo_data.txt") as my_file:
+    print(my_file.read())
