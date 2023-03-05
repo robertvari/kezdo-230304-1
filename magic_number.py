@@ -12,6 +12,7 @@ print(f"I have a number between {min} and {max}. Can you guess it?")
 while True:
     # get a random number
     magic_number = random.randint(min, max)
+    magic_number = 5   # TODO Remove this!!!
 
     # set maximum tries to 3
     tries = 3
@@ -27,17 +28,17 @@ while True:
         # remove one tries
         tries -= 1
         if tries == 0:
-            print(f"My number was {magic_number}.")
-
-            player_choice = input("Do you want to play again? (y/n)")
-            if player_choice == "n":  
-                exit()
+            break
 
         print(f"Wrong guess. You have {tries} tries left. Try again!")
         player_guess = input("Your guess?")
 
     os.system("cls")
-    print(f"You win! {magic_number} was my number! :)))")
+    if player_guess == str(magic_number):
+        print(f"You win! {magic_number} was my number! :)))")
+    else: 
+        print(f"My number was {magic_number}.")
+        print("Game over :((")
     
     player_choice = input("Do you want to play again? (y/n)")
     if player_choice == "n":  
