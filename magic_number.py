@@ -41,5 +41,6 @@ while True:
         print("Game over :((")
     
     player_choice = input("Do you want to play again? (y/n)")
-    if player_choice == "n":  
+    if player_choice == "n":
         exit()
+    os.system("cls")
